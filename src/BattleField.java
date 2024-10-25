@@ -1,6 +1,13 @@
 public class BattleField
 {
-    String[][]fieldArr = new String[12][12];
+    public String[][]fieldArr;
+
+   public BattleField()
+   {
+       this.fieldArr = new String[12][12];
+       Initialize();
+
+   }
     public void Initialize()
     {
       for (int i = 0; i < 12; i++)
@@ -11,6 +18,9 @@ public class BattleField
           }
       }
 
+    }
+    public void OutputBattleField()
+    {
         for (int i = 0; i < 12; i++)
         {
             for (int j = 0; j < 12; j++)
